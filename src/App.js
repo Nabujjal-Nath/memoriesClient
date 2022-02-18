@@ -2,11 +2,13 @@ import "./App.css";
 import { Container, Typography, AppBar, Grow, Grid } from '@material-ui/core'
 import Posts from "./components/Posts/Posts";
 import Form from "./components/Form/Form";
+import useStyles from './styles'
 function App() {
+  const classes = useStyles()
   return (
     <Container maxWidth="lg">
       <AppBar color="inherit" position="static">
-        <Typography variant="h2" align="center">
+        <Typography variant="h2" align="center" className={classes.heading}>
           Hi Memories
         </Typography>
       </AppBar>
